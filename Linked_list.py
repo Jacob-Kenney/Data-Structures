@@ -16,13 +16,10 @@ class Node:
 #Class for linked list
 class LinkedList:
   
-  #function to initialise an instance of linked list, taking head node (default as None) as input
-  def __init__(self, head_node = None):
-    #set linked list instance variable, head node, to an instance of node with value of head node input
-    if head_node == None:
-      self.head_node = head_node
-    else:
-      self.head_node = Node(head_node)
+  #function to initialise an instance of linked list, no input
+  def __init__(self):
+    #set linked list instance variable, head node, to None as the list is empty
+    self.head_node = None
     
   #function to add node to the head of an instance of linked list, taking value as input
   def add_to_head(self, value):
