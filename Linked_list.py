@@ -8,7 +8,7 @@ class Node:
     #set node instance variable, next node, to next node input
     self.next_node = next_node
 
-  #function to set a nodes instance variable, next node, taking next node as an input
+  #function to set a node's instance variable, next node, taking next node as an input
   def set_next_node(self, next_node):
     #set node instance variable, next node, to next node input
     self.next_node = next_node
