@@ -18,8 +18,11 @@ class LinkedList:
   
   #function to initialise an instance of linked list, taking head node (default as None) as input
   def __init__(self, head_node = None):
-    #set linked list instance variable, head, to head node input
-    self.head_node = head_node
+    #set linked list instance variable, head node, to an instance of node with value of head node input
+    if head_node == None:
+      self.head_node = head_node
+    else:
+      self.head_node = Node(head_node)
     
   #function to add node to the head of an instance of linked list, taking value as input
   def add_to_head(self, value):
