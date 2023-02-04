@@ -56,3 +56,25 @@
       #set next node instance variable of new tail to None
     #if current tail is the head node of this instance of doubly linked list
       #call remove head function on this instance of doubly linked list
+      
+  #function to remove a node from doubly linked list, taking value as input
+    #assign a temporary variable (node to remove) to None
+    #assign a temporary variable (current node) to the head node of this instance of linked list
+    #while current node next node instance variable is not None
+      #if value instance variable of current node is value
+        #set node to remove to current node
+        #break
+      #set current node to next node instance variable of current node
+    #if node to remove is None
+      #return None
+    #if node to remove is the head node of this instance of doubly linked list
+      #call remove head function on this instance of doubly linked list
+    #if node to remove is the tail node of this instance of doubly linke list
+      #call remove tail function on this instance of doubly linked list
+    #else
+      #assign a temporary variable (next node) to the next node instance variable of node to remove
+      #assign a temporary variable (previous node) to the previous node instance variable of node to remove
+      #set the next node instance variable of previous node to next node
+      #set the previous node instance variable of next node to previous node
+    #return node to remove
+    
