@@ -1,1 +1,11 @@
+#Class for doubly linked list
 
+  #function to initialise an instance of doubly linked list, taking no input
+  
+  #function to add to the head of this instance of doubly linked list, taking no input
+  
+  #function to add to the tail of this instance of doubly linked list, taking no input
+  
+  #function to remove the head of this instance of doubly linked list, taking no input
+  
+  #function to remove the tail of this instance of doubly linked list, taking no input
