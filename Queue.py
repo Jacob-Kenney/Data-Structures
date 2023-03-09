@@ -36,12 +36,44 @@ class Queue
     #else
     else:
       #set next node instance variable of the tail of this queue to new tail
+      self.tail_node.set_next_node(new_tail)
       #set the tail node of this instance of queue to new tail
+      self.tail_node = new_tail
   
   #function to peek (view head without modifying the state of the queue), taking no input
+  def peek(self):
     #if head of this instance of queue is None
-      #return head 
+    if self.head_node == None:
+      #return None
+      return None
     #else
+    else:
       #return head instance variable, data
+      return self.head_node.data
   
   #function to dequeue (remove and return the queue's head), taking no input
+  def dequeue(self):
+    #assign a temporary variable (current head) to head of this instance of queue 
+    current_head = self.head_node
+    #if current head is None
+    if current_head == None:
+      #return None
+      return None
+    #else
+    else:
+      #if next node instance variable of current head is None
+      if current_head.next_node == None:
+        #set the tail node of this instance of queue to None
+        self.tail_node = None
+        #set the head node of this instance of queue to None
+        self.head_node = None
+        #return current head
+        return current_head
+      #else
+      else:
+        #assign a temporary variable (next head) to the next node instance variable of current head
+        next_head = current_head.next_node
+        #set the head node of this instance of queue to next head
+        self.head_node = next_head
+        #return current head
+        return current_head
