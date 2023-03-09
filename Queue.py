@@ -1,5 +1,5 @@
 #Class for Node
-class Node
+class Node:
 
   #function to initialise an instance of node, taking data as input
   def __init__(self,data):
@@ -14,7 +14,7 @@ class Node
     self.next_node = next_node
     
 #Class for Queue
-class Queue
+class Queue:
 
   #function to initialise an instance of queue, taking no input
   def __init__(self):
